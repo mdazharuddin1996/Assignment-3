@@ -12,6 +12,14 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- font-awesome cdn start -->
     <link
       rel="stylesheet"
@@ -22,12 +30,95 @@
     />
     <!-- font-awesome cdn end -->
 
+    <!---------------- customs css and classes start-------------->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              text_color: "#212121",
+              primary_color: "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
     <!-- external css link -->
     <link rel="stylesheet" href="css/style.css" />
+    <!--------- customs css and classes end----------->
   </head>
   <body>
-    <header>
+    <header class="w-9/12 mx-auto">
       <!-- --------navbar start------ -->
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <div
+              class="h-8 p-2 mr-2 relative w-8 bg-primary_color rounded-full"
+            >
+              <svg
+                class="text-center"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3"
+                stroke="currentColor"
+                class="size-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </div>
+            <h1 class="text-3xl text-text_color font-extrabold">Rinterio</h1>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="font-extrabold text-[#464646]">Home</a></li>
+            <li><a class="font-bold text-[#737373]">Home</a></li>
+            <li><a class="font-bold text-[#737373]">Service</a></li>
+            <li><a class="font-bold text-[#737373]">Portfolio</a></li>
+            <li><a class="font-bold text-[#737373]">Blogs</a></li>
+            <li><a class="font-bold text-[#737373]">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end justify-center text-center relative">
+          <div class="h-8 w-8 mr-4 rounded-full bg-[#f4f0f0]">
+            <i class="fa-solid fa-magnifying-glass relative top-1"></i>
+          </div>
+          <div class="h-8 w-8 mr-4 rounded-full bg-[#f4f0f0]">
+            <i class="fa-solid fa-cart-shopping relative top-1"></i>
+          </div>
+          <a class="btn bg-primary_color text-xl rounded-full font-extrabold"
+            >Book Consult
+            <div class="h-8 w-8 p-2 rounded-full bg-black">
+              <svg
+                class="text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="size-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
       <!-- --------navbar end------ -->
       <!-- ----banner part start -------- -->
       <!-- ----banner part end -------- -->
